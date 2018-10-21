@@ -24,7 +24,9 @@
     
     <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/icomoon.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
   </head>
   <body>
     
@@ -80,19 +82,6 @@
             {% elif error %}
               <p style="color: red;font-style: italic;">{{ error }}</p>
             {% endif %}
-          </div>
-          <div class="one-half align-self-md-end align-self-sm-center">
-          	<div class="slider-carousel owl-carousel">
-          		<div class="item">
-			          <img src="images/dashboard_full_1.png" class="img-fluid img"alt="">
-		          </div>
-		          <div class="item">
-			          <img src="images/dashboard_full_2.png" class="img-fluid img"alt="">
-		          </div>
-		          <div class="item">
-			          <img src="images/dashboard_full_3.png" class="img-fluid img"alt="">
-		          </div>
-	          </div>
           </div>
         </div>
       </div>
@@ -193,6 +182,76 @@
 
     <section class="ftco-section bg-light">
     	<div class="container">
+					<div class="one-half align-self-md-end align-self-sm-center">
+							<form action="{{url_for('state_flood_events')}}" method='POST'>
+								<div class="form-group col-md-4">
+									<label class="text-primary" for="inputState">State:</label>
+									<select id="state_name" class="form-control" name="state_name">
+										<option>--Select--</option>
+										<option value="Alabama">Alabama</option>
+										<option value="Alaska">Alaska</option>
+										<option value="Arizona">Arizona</option>
+										<option value="Arkansas">Arkansas</option>
+										<option value="California">California</option>
+										<option value="Colorado">Colorado</option>
+										<option value="Connecticut">Connecticut</option>
+										<option value="Delaware">Delaware</option>
+										<option value="District of Columbia">District Of Columbia</option>
+										<option value="Florida">Florida</option>
+										<option value="Georgia">Georgia</option>
+										<option value="Hawaii">Hawaii</option>
+										<option value="Idaho">Idaho</option>
+										<option value="Illinois">Illinois</option>
+										<option value="Indiana">Indiana</option>
+										<option value="Iowa">Iowa</option>
+										<option value="Kansas">Kansas</option>
+										<option value="Kentucky">Kentucky</option>
+										<option value="Louisiana">Louisiana</option>
+										<option value="Maine">Maine</option>
+										<option value="Maryland">Maryland</option>
+										<option value="Massachusetts">Massachusetts</option>
+										<option value="Michigan">Michigan</option>
+										<option value="Minnesota">Minnesota</option>
+										<option value="Mississippi">Mississippi</option>
+										<option value="Missouri">Missouri</option>
+										<option value="Montana">Montana</option>
+										<option value="Nebraska">Nebraska</option>
+										<option value="Nevada">Nevada</option>
+										<option value="New Hampshire">New Hampshire</option>
+										<option value="New Jersey">New Jersey</option>
+										<option value="New Mexico">New Mexico</option>
+										<option value="New York">New York</option>
+										<option value="North Carolina">North Carolina</option>
+										<option value="North Dakota">North Dakota</option>
+										<option value="Ohio">Ohio</option>
+										<option value="Oklahoma">Oklahoma</option>
+										<option value="Oregon">Oregon</option>
+										<option value="Pennsylvania">Pennsylvania</option>
+										<option value="Rhode Island">Rhode Island</option>
+										<option value="South Carolina">South Carolina</option>
+										<option value="South Dakota">South Dakota</option>
+										<option value="Tennessee">Tennessee</option>
+										<option value="Texas">Texas</option>
+										<option value="Utah">Utah</option>
+										<option value="Vermont">Vermont</option>
+										<option value="Virginia">Virginia</option>
+										<option value="Washington">Washington</option>
+										<option value="West Virginia">West Virginia</option>
+										<option value="Wisconsin">Wisconsin</option>
+										<option value="Wyoming">Wyoming</option>
+										<option value="American Samoa">American Samoa</option>
+										<option value="Puerto Rico">Puerto Rico</option>
+										<option value="Northern Marina Islands">Northern Marina Islands</option>
+										<option value="Virgin Islands">U.S. Vigin Islands</option>
+									</select>
+									<button type="submit" class="btn btn-primary">View</button>
+								</div>
+							</form>
+							
+							{%if division_header%}
+							{{division_header | safe}}
+							{%endif%}
+						</div>
     	</div>
     </section>
 
@@ -377,7 +436,7 @@
     </div>
   </div>
 </div>
-
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
   <script src="{{ url_for('static', filename='js/jquery-migrate-3.0.1.min.js') }}"></script>
   <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
