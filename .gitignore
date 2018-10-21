@@ -1,0 +1,9 @@
+# IDEA Ignores #
+################
+.idea/
+
+# Virtual environment
+venv/*
+
+# environment
+__pycache__/
