@@ -1,0 +1,65 @@
+State,state_FIPS,county_FIPS,County,classfp
+CO,08,001,Adams County,H1
+CO,08,003,Alamosa County,H1
+CO,08,005,Arapahoe County,H1
+CO,08,007,Archuleta County,H1
+CO,08,009,Baca County,H1
+CO,08,011,Bent County,H1
+CO,08,013,Boulder County,H1
+CO,08,014,Broomfield County,H6
+CO,08,015,Chaffee County,H1
+CO,08,017,Cheyenne County,H1
+CO,08,019,Clear Creek County,H1
+CO,08,021,Conejos County,H1
+CO,08,023,Costilla County,H1
+CO,08,025,Crowley County,H1
+CO,08,027,Custer County,H1
+CO,08,029,Delta County,H1
+CO,08,031,Denver County,H6
+CO,08,033,Dolores County,H1
+CO,08,035,Douglas County,H1
+CO,08,037,Eagle County,H1
+CO,08,039,Elbert County,H1
+CO,08,041,El Paso County,H1
+CO,08,043,Fremont County,H1
+CO,08,045,Garfield County,H1
+CO,08,047,Gilpin County,H1
+CO,08,049,Grand County,H1
+CO,08,051,Gunnison County,H1
+CO,08,053,Hinsdale County,H1
+CO,08,055,Huerfano County,H1
+CO,08,057,Jackson County,H1
+CO,08,059,Jefferson County,H1
+CO,08,061,Kiowa County,H1
+CO,08,063,Kit Carson County,H1
+CO,08,065,Lake County,H1
+CO,08,067,La Plata County,H1
+CO,08,069,Larimer County,H1
+CO,08,071,Las Animas County,H1
+CO,08,073,Lincoln County,H1
+CO,08,075,Logan County,H1
+CO,08,077,Mesa County,H1
+CO,08,079,Mineral County,H1
+CO,08,081,Moffat County,H1
+CO,08,083,Montezuma County,H1
+CO,08,085,Montrose County,H1
+CO,08,087,Morgan County,H1
+CO,08,089,Otero County,H1
+CO,08,091,Ouray County,H1
+CO,08,093,Park County,H1
+CO,08,095,Phillips County,H1
+CO,08,097,Pitkin County,H1
+CO,08,099,Prowers County,H1
+CO,08,101,Pueblo County,H1
+CO,08,103,Rio Blanco County,H1
+CO,08,105,Rio Grande County,H1
+CO,08,107,Routt County,H1
+CO,08,109,Saguache County,H1
+CO,08,111,San Juan County,H1
+CO,08,113,San Miguel County,H1
+CO,08,115,Sedgwick County,H1
+CO,08,117,Summit County,H1
+CO,08,119,Teller County,H1
+CO,08,121,Washington County,H1
+CO,08,123,Weld County,H1
+CO,08,125,Yuma County,H1

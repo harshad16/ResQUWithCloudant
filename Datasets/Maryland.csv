@@ -1,0 +1,25 @@
+State,state_FIPS,county_FIPS,County,classfp
+MD,24,1,Allegany County,H1
+MD,24,3,Anne Arundel County,H1
+MD,24,5,Baltimore County,H1
+MD,24,9,Calvert County,H1
+MD,24,11,Caroline County,H1
+MD,24,13,Carroll County,H1
+MD,24,15,Cecil County,H1
+MD,24,17,Charles County,H1
+MD,24,19,Dorchester County,H1
+MD,24,21,Frederick County,H1
+MD,24,23,Garrett County,H1
+MD,24,25,Harford County,H1
+MD,24,27,Howard County,H1
+MD,24,29,Kent County,H1
+MD,24,31,Montgomery County,H1
+MD,24,33,Prince George's County,H1
+MD,24,35,Queen Anne's County,H1
+MD,24,37,St. Mary's County,H1
+MD,24,39,Somerset County,H1
+MD,24,41,Talbot County,H1
+MD,24,43,Washington County,H1
+MD,24,45,Wicomico County,H1
+MD,24,47,Worcester County,H1
+MD,24,510,Baltimore city,C7

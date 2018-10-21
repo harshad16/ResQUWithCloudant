@@ -1,0 +1,18 @@
+State,state_FIPS,county_FIPS,County,classfp
+NV,32,1,Churchill County,H1
+NV,32,3,Clark County,H1
+NV,32,5,Douglas County,H1
+NV,32,7,Elko County,H1
+NV,32,9,Esmeralda County,H1
+NV,32,11,Eureka County,H1
+NV,32,13,Humboldt County,H1
+NV,32,15,Lander County,H1
+NV,32,17,Lincoln County,H1
+NV,32,19,Lyon County,H1
+NV,32,21,Mineral County,H1
+NV,32,23,Nye County,H1
+NV,32,27,Pershing County,H1
+NV,32,29,Storey County,H1
+NV,32,31,Washoe County,H1
+NV,32,33,White Pine County,H1
+NV,32,510,Carson City,C7

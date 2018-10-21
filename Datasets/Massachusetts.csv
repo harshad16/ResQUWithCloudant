@@ -1,0 +1,15 @@
+State,state_FIPS,county_FIPS,County,classfp
+MA,25,1,Barnstable County,H1
+MA,25,3,Berkshire County,H4
+MA,25,5,Bristol County,H1
+MA,25,7,Dukes County,H1
+MA,25,9,Essex County,H4
+MA,25,11,Franklin County,H4
+MA,25,13,Hampden County,H4
+MA,25,15,Hampshire County,H4
+MA,25,17,Middlesex County,H4
+MA,25,19,Nantucket County,H4
+MA,25,21,Norfolk County,H1
+MA,25,23,Plymouth County,H1
+MA,25,25,Suffolk County,H4
+MA,25,27,Worcester County,H4
