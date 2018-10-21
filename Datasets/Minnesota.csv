@@ -1,0 +1,88 @@
+State,state_FIPS,county_FIPS,County,classfp
+MN,27,1,Aitkin County,H1
+MN,27,3,Anoka County,H1
+MN,27,5,Becker County,H1
+MN,27,7,Beltrami County,H1
+MN,27,9,Benton County,H1
+MN,27,11,Big Stone County,H1
+MN,27,13,Blue Earth County,H1
+MN,27,15,Brown County,H1
+MN,27,17,Carlton County,H1
+MN,27,19,Carver County,H1
+MN,27,21,Cass County,H1
+MN,27,23,Chippewa County,H1
+MN,27,25,Chisago County,H1
+MN,27,27,Clay County,H1
+MN,27,29,Clearwater County,H1
+MN,27,31,Cook County,H1
+MN,27,33,Cottonwood County,H1
+MN,27,35,Crow Wing County,H1
+MN,27,37,Dakota County,H1
+MN,27,39,Dodge County,H1
+MN,27,41,Douglas County,H1
+MN,27,43,Faribault County,H1
+MN,27,45,Fillmore County,H1
+MN,27,47,Freeborn County,H1
+MN,27,49,Goodhue County,H1
+MN,27,51,Grant County,H1
+MN,27,53,Hennepin County,H1
+MN,27,55,Houston County,H1
+MN,27,57,Hubbard County,H1
+MN,27,59,Isanti County,H1
+MN,27,61,Itasca County,H1
+MN,27,63,Jackson County,H1
+MN,27,65,Kanabec County,H1
+MN,27,67,Kandiyohi County,H1
+MN,27,69,Kittson County,H1
+MN,27,71,Koochiching County,H1
+MN,27,73,Lac qui Parle County,H1
+MN,27,75,Lake County,H1
+MN,27,77,Lake of the Woods County,H1
+MN,27,79,Le Sueur County,H1
+MN,27,81,Lincoln County,H1
+MN,27,83,Lyon County,H1
+MN,27,85,McLeod County,H1
+MN,27,87,Mahnomen County,H1
+MN,27,89,Marshall County,H1
+MN,27,91,Martin County,H1
+MN,27,93,Meeker County,H1
+MN,27,95,Mille Lacs County,H1
+MN,27,97,Morrison County,H1
+MN,27,99,Mower County,H1
+MN,27,101,Murray County,H1
+MN,27,103,Nicollet County,H1
+MN,27,105,Nobles County,H1
+MN,27,107,Norman County,H1
+MN,27,109,Olmsted County,H1
+MN,27,111,Otter Tail County,H1
+MN,27,113,Pennington County,H1
+MN,27,115,Pine County,H1
+MN,27,117,Pipestone County,H1
+MN,27,119,Polk County,H1
+MN,27,121,Pope County,H1
+MN,27,123,Ramsey County,H1
+MN,27,125,Red Lake County,H1
+MN,27,127,Redwood County,H1
+MN,27,129,Renville County,H1
+MN,27,131,Rice County,H1
+MN,27,133,Rock County,H1
+MN,27,135,Roseau County,H1
+MN,27,137,St. Louis County,H1
+MN,27,139,Scott County,H1
+MN,27,141,Sherburne County,H1
+MN,27,143,Sibley County,H1
+MN,27,145,Stearns County,H1
+MN,27,147,Steele County,H1
+MN,27,149,Stevens County,H1
+MN,27,151,Swift County,H1
+MN,27,153,Todd County,H1
+MN,27,155,Traverse County,H1
+MN,27,157,Wabasha County,H1
+MN,27,159,Wadena County,H1
+MN,27,161,Waseca County,H1
+MN,27,163,Washington County,H1
+MN,27,165,Watonwan County,H1
+MN,27,167,Wilkin County,H1
+MN,27,169,Winona County,H1
+MN,27,171,Wright County,H1
+MN,27,173,Yellow Medicine County,H1
