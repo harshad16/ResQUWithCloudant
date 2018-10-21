@@ -198,8 +198,10 @@ def sos():
 			break
 		msg += 'Disaster SOS Alerts\n {} has been stuck in {}.\n Help Urgently Needed!!\n Contact Info: {}\n '.format(full_name, disaster, contact)
 		latlng = get_latlng()
+		print(latlng)
 		if latlng:
 			address = get_location(latlng)
+			print(address)
 			if address:
 				for k,v in address.items():
 					msg += '{}: {}\n '.format(k,v)
@@ -264,7 +266,8 @@ def get_location(latlng):
 
 def get_latlng():
 	g = geocoder.ip('me')
-	return ''.join(list(map(str, g.latlng)))
+	return ','.join(list(map(str, g.latlng)))
+
 
 def send_alert(body):
 	client = Client(API().account_sid, API().auth_token)
