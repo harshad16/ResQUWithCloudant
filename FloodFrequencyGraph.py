@@ -10,13 +10,13 @@ import plotly.figure_factory as ff
 sheetname = "NFIP"
 sheetname1="NOAA"
 sheetname2= "IA"
-nfip = pd.read_excel("DataVizFloodsFV3_22_2017.xlsx",sheet_name=sheetname)
-noaa = pd.read_excel("DataVizFloodsFV3_22_2017.xlsx",sheet_name=sheetname1)
-nhp = pd.read_excel("DataVizFloodsFV3_22_2017.xlsx",sheet_name=sheetname2)
+nfip = pd.read_excel("./Datasets/DataVizFloodsFV3_22_2017.xlsx",sheet_name=sheetname)
+noaa = pd.read_excel("./Datasets/DataVizFloodsFV3_22_2017.xlsx",sheet_name=sheetname1)
+nhp = pd.read_excel("./Datasets/DataVizFloodsFV3_22_2017.xlsx",sheet_name=sheetname2)
 
 
 def return_fips(state_name):
-    df = pd.read_csv(state_name+'.csv')
+    df = pd.read_csv('./Datasets/'+state_name+'.csv')
     df['state_FIPS'] = df['state_FIPS'].apply(lambda x:str(x).zfill(2))
     df['county_FIPS']= df['county_FIPS'].apply(lambda x:str(x).zfill(3))
     del df['classfp']
@@ -53,4 +53,4 @@ def state_flood_events(noaa,state_name):
     )
     plot(fig)
 
-
+state_flood_events(noaa,'Alabama')
