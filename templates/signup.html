@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ResQU - Disaster Management and Service Site</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/open-iconic-bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.min.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-datepicker.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.timepicker.css') }}">
+
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/icomoon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="{{ url_for('home') }}"><h2 class="text-primary">ResQU</h2></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="{{ url_for('home') }}" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+	          <li class="nav-item cta"><a href="{{ url_for('login') }}" class="nav-link"><span>Login</span></a></li>
+            <li class="nav-item cta"><a href="{{ url_for('signup') }}" class="nav-link"><span>SignUp</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <section class="ftco-section ftco-signup" id="signup">
+	<div class="container">
+    <div class="card card-register mx-auto mt-5">
+      <div class="card-header">Register an Account</div>
+      <div class="card-body">
+        <form method="post" action="{{ url_for('signup') }}">
+            <br/>
+            {% if error %}
+            <p style="color: red;font-style: italic;">{{ error }}</p>
+            {% endif %}
+            <br/> 
+            <div class="form-group">
+                <div class="form-row">
+                    <label class="text-primary" for='username'>Username:</label>
+                    <input class="form-control" id='username' name='username' type='text' aria-describedby="usernameHelp" placeholder="Enter username" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                    <div class="form-row">
+                      <div class="col-md-6">
+                        <label class="text-primary" for="first_name">First name:</label>
+                        <input class="form-control" id="first_name" name="first_name" type="text" aria-describedby="nameHelp" placeholder="Enter first name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="text-primary" for="last_name">Last name:</label>
+                        <input class="form-control" id="last_name" name="last_name" type="text" aria-describedby="nameHelp" placeholder="Enter last name" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="text-primary" for="email">Email address:</label>
+                <input class="form-control" id="email" name='email' type="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+            </div>
+
+            <div class="form-group">
+                <label class="text-primary" for="address">Address:</label>
+                <input class="form-control" id="address" name='address' type="text" aria-describedby="emailHelp" placeholder="Enter address" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label class="text-primary" for="inputCity">City:</label>
+                <input type="text" class="form-control" id="inputCity" name="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label class="text-primary" for="inputState">State:</label>
+                <select id="inputState" class="form-control" name="inputState">
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label class="text-primary" for="inputZip">Zip:</label>
+                <input type="text" class="form-control" id="inputZip" name="inputZip">
+              </div>
+            </div>
+
+            <div class="form-group">
+                <label class="text-primary" for="contact">Contact Number:</label>
+                <input class="form-control" id="contact" name='contact' type="text" aria-describedby="emailHelp" placeholder="Enter Contact number" required>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row">
+                      <div class="col-md-6">
+                        <label class="text-primary" for="emergency_contact">1st Emergency Contact Person's Full Name:</label>
+                        <input class="form-control" id="first_emergency_contact_name" name="first_emergency_contact_name" type="text" aria-describedby="nameHelp" placeholder="Enter your first emergency contact person Full Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="text-primary" for="emergency_contact">1st Emergency Contact Person's Phone Number:</label>
+                        <input class="form-control" id="first_emergency_contact_number" name="first_emergency_contact_number" type="text" aria-describedby="nameHelp" placeholder="Enter your first emergency contact person Contact Number" required>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="form-row">
+                      <div class="col-md-6">
+                        <label class="text-primary" for="emergency_contact">2nd Emergency Contact Person's Full Name:</label>
+                        <input class="form-control" id="second_emergency_contact_name" name="second_emergency_contact_name" type="text" aria-describedby="nameHelp" placeholder="Enter your second emergency contact person Full Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="text-primary" for="emergency_contact">2nd Emergency Contact Person's Phone Number:</label>
+                        <input class="form-control" id="second_emergency_contact_number" name="second_emergency_contact_number" type="text" aria-describedby="nameHelp" placeholder="Enter your second emergency contact person Contact Number" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <label class="text-primary" for="password">Password</label>
+                    <input class="form-control" id="password" name='password' type="password" placeholder="Password" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="text-primary" for="password2">Confirm password</label>
+                    <input class="form-control" id="password2" name='password2' type="password" placeholder="Confirm password" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <button type="submit" class="btn btn-primary" style="margin-left: 2em">Register</button>
+            <button type="reset" class="btn btn-secondary-outline" style="margin-left: 2em">Cancel</button>
+        </div>
+    </form>
+        <div class="text-center">
+            <a class="d-block small mt-3" href="{{ url_for('login') }}">Login Page</a>
+            <a class="d-block small" href="#">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    </section>
+
+		
+    <footer class="ftco-footer ftco-bg-dark ftco-section" id="contact">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">ResQU</h2>
+              <p>While natural disasters capture headlines and national attention short-term, the work of recovery and rebuilding is long-term.</p>
+            </div>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">About</a></li>
+                <li><a href="#" class="py-2 d-block">Features</a></li>
+                <li><a href="#" class="py-2 d-block">Projects</a></li>
+                <li><a href="#" class="py-2 d-block">Blog</a></li>
+                <li><a href="#" class="py-2 d-block">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 pr-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Recent Blog</h2>
+              <div class="block-21 mb-4 d-flex">
+                <div class="text">
+                  <h3 class="heading"><a href="#">Providing Help is the First and Formost Resposibility - Hurricane Resque NGO</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> Sept 15, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+          	</div>
+          </div>
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Contact Info</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Boston University, Massachusetts, USA</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+1 180 000 2100</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@ResQU.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+   
+  
+  <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery-migrate-3.0.1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.stellar.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.animateNumber.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap-datepicker.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.timepicker.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/scrollax.min.js') }}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{{ url_for('static', filename='js/google-map.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    
+  </body>
+</html>
