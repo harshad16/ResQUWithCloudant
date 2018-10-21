@@ -214,10 +214,6 @@ def sos():
 def state_flood_events():
 	state_name = request.form.get('state_name')
 	noaa1 = noaa.copy(deep=True)
-	del noaa1['Year']
-	del noaa1['Lat']
-	del noaa1['Lon']
-	del noaa1['CountyZone']
 	df = return_fips(state_name)
 	df2 = pd.merge(noaa1, df, on=['State','County'])
 	del df2['State']
