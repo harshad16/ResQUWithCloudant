@@ -31,7 +31,7 @@ MarkupSafe==1.0
 matplotlib==2.2.3
 munch==2.3.2
 nbformat==4.4.0
-numpy==1.15.2
+numpy==1.22.0
 pandas==0.23.4
 passlib==1.7.1
 plotly==3.3.0
